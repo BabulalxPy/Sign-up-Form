@@ -8,38 +8,58 @@
 </head>
 <body>
     <div class="title">
-        <!--<img src="images/clannnad.jpg" width="40%">-->
-        <h1>CLANNAD</h1>
+        <div class="content">
+            <div class="logo-image"><img src="images/odin-lined.png"></div>
+            <h1>CLANNAD</h1>
+        </div>
+        <p class="footer">photo on <a href="https://wallpaperaccess.com/clannad-phone">wallpaperaccess</a></p>
     </div>
     <div class="container">
-        <p>
-            Hoping for a good times! There will be hurdles and fears ahead but we need to takle them, and keep going.
-            Be there for me, forever at peace. Sign up to enter the world full of sorrow and sadness.
-
-            The leaves are changing and so are we.
-        </p>
-        <h2>Let's do this</h2>
+        <div class="text-para">
+            <p>Hoping for a good times! There will be hurdles and fears ahead but we need to takle them, and keep going. Be there for me, forever at peace.</p>
+            <p>Sign up <i>now</i> enter the world full of sorrow and sadness.</p>
+            <h2>The leaves are changing and so are we.</h2>
+        </div>
+    
         <form action="www.monkeytype.com" method="post">
         <fieldset>
             <legend>Let's do this</legend>
             
-            <label for="first-name">First Name:</label>
-            <input type="text" id="first-name" name="first-name">
+            <div class="name">
+                <div class="first_name">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
 
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="last-name">
+                <div class="last_name">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+            </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+            <div class="contact">
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            <label for="number">Phone number:</label>
-            <input type="number" id="number" name="number">
+                <div class="number">
+                    <label for="number">Phone number:</label>
+                    <input type="number" id="number" name="number" required maxlength="10">
+                </div>
+            </div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
+            <div class="password">
+                <div class="pass">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
 
-            <label for="confirm-password">confirm-password:</label>
-            <input type="password" id="confirm-password" name="confirm-password">
+                <div class="conpass">
+                    <label for="confirm-password">confirm-password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+            </div>
         </fieldset>
         <p class="button">
             <button class="create_account">Create Account</button>
